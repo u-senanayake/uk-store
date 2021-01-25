@@ -14,7 +14,7 @@
     </parent>
     <groupId>udayanga.senanayake</groupId>
     <artifactId>uk-store</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>uk-store</name>
     <description>Online Store</description>
     <properties>
@@ -54,6 +54,6 @@
     </build>
 <scm>
     <developerConnection>scm:git:git@github.com:u-senanayake/uk-store.git</developerConnection>
-  <tag>HEAD</tag>
+  <tag>uk-store-0.0.2</tag>
   </scm>
 </project>
