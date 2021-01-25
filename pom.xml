@@ -40,7 +40,19 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <!--Maven release plugin-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
+            </plugin>
+            <!--Maven release plugin-->
         </plugins>
     </build>
-
+<scm>
+    <developerConnection>scm:git:git@github.com:u-senanayake/uk-store.git</developerConnection>
+</scm>
 </project>
