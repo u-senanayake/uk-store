@@ -25,6 +25,14 @@ public class DataLoader implements CommandLineRunner {
         product.setStock(12L);
         productService.save(product);
 
+        Product product2 = new Product();
+        product2.setId(2L);
+        product2.setDescription("Test Description 2");
+        product2.setName("Product 2");
+        product2.setPrice(251D);
+        product2.setStock(121L);
+        productService.save(product2);
+
         System.out.println("Products saved...");
 
     }
