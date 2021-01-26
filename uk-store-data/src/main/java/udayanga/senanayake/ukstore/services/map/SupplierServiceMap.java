@@ -1,10 +1,12 @@
 package udayanga.senanayake.ukstore.services.map;
 
+import org.springframework.stereotype.Service;
 import udayanga.senanayake.ukstore.model.Supplier;
 import udayanga.senanayake.ukstore.services.CrudService;
 
 import java.util.Set;
 
+@Service
 public class SupplierServiceMap extends AbstractMapService<Supplier, Long> implements CrudService<Supplier, Long> {
     @Override
     public Supplier findById(Long id) {

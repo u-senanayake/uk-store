@@ -1,11 +1,14 @@
 package udayanga.senanayake.ukstore.services.map;
 
+import org.springframework.stereotype.Service;
 import udayanga.senanayake.ukstore.model.Product;
 import udayanga.senanayake.ukstore.services.CrudService;
+import udayanga.senanayake.ukstore.services.ProductService;
 
 import java.util.Set;
 
-public class ProductServiceMap extends AbstractMapService<Product, Long> implements CrudService<Product, Long> {
+@Service
+public class ProductServiceMap extends AbstractMapService<Product, Long> implements ProductService {
     @Override
     public Product findById(Long id) {
         return super.findById(id);
@@ -29,5 +32,10 @@ public class ProductServiceMap extends AbstractMapService<Product, Long> impleme
     @Override
     public Set<Product> findAll() {
         return super.findAll();
+    }
+
+    @Override
+    public Product findByName(String lastName) {
+        return null;
     }
 }

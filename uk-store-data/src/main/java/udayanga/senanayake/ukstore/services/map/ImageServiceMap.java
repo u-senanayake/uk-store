@@ -1,11 +1,14 @@
 package udayanga.senanayake.ukstore.services.map;
 
+import org.springframework.stereotype.Service;
 import udayanga.senanayake.ukstore.model.Image;
 import udayanga.senanayake.ukstore.services.CrudService;
+import udayanga.senanayake.ukstore.services.ImageService;
 
 import java.util.Set;
 
-public class ImageServiceMap extends AbstractMapService<Image, Long> implements CrudService<Image, Long> {
+@Service
+public class ImageServiceMap extends AbstractMapService<Image, Long> implements ImageService {
     @Override
     public Image findById(Long id) {
         return super.findById(id);
